@@ -7,6 +7,7 @@ class Tower(pygame.sprite.Sprite):
         self.rect.topleft = (x,y)
         self.building = building
     def update(self):
+        pos = self.get_pos()
         if (building):
             pos = pygame.mouse.get_pos()
         self.rect.midtop = pos
